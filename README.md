@@ -5,3 +5,4 @@
 
 - [Strategy Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/StrategyPattern)
 - [Observer Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/ObserverPattern)
+- [Decorator Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/DecoratorPattern)
