@@ -9,7 +9,8 @@ namespace ObserverPattern.Observers
 
         public Manager(ISubject subject)
         {
-            subject.RegisterObserver(this);
+            _subject = subject;
+            _subject.RegisterObserver(this);
         }
         public void Act(string message)
         {
