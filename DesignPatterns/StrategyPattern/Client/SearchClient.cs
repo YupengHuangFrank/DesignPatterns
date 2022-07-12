@@ -14,14 +14,14 @@ namespace StrategyPattern.Client
 
         public Node ExecuteSearch(int id, Node node, StrategyEnum strategy) 
         {
-            if (strategy == StrategyEnum.BFS) 
+            if (strategy == StrategyEnum.Bfs) 
             {
-                Context.SetStrategy(new BFS());
+                Context.SetStrategy(new Bfs());
             }
 
-            else if (strategy == StrategyEnum.DFS)
+            else if (strategy == StrategyEnum.Dfs)
             {
-                Context.SetStrategy(new DFS());
+                Context.SetStrategy(new Dfs());
             }
 
             return Context.ExecuteStrategy(id, node);

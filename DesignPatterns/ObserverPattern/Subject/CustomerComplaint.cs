@@ -4,7 +4,7 @@ namespace ObserverPattern.Subject
 {
     public class CustomerComplaint : ISubject
     {
-        private List<IObserver> _observers = new List<IObserver>();
+        private readonly List<IObserver> _observers;
         private string _message;
         
         public CustomerComplaint() 
@@ -15,12 +15,10 @@ namespace ObserverPattern.Subject
 
         public void BroadCast()
         {
-            if (_message != null)
+            if (_message == "") return;
+            foreach (var observer in _observers)
             {
-                foreach (var observer in _observers)
-                {
-                    observer.Act(_message);
-                }
+                observer.Act(_message);
             }
         }
 
@@ -39,14 +37,12 @@ namespace ObserverPattern.Subject
             Console.WriteLine("Please enter your complaint");
             var complaint = Console.ReadLine();
             Console.WriteLine("Thank you for your feedback!");
-            if (person == PersonEnum.Manager) 
+            _message = person switch
             {
-                _message = String.Concat("Manager", _message);
-            }
-            if (person == PersonEnum.TechnicalSupport)
-            {
-                _message = String.Concat("Technical Support", _message);
-            }
+                PersonEnum.Manager => String.Concat("Manager", complaint),
+                PersonEnum.TechnicalSupport => String.Concat("Technical Support", complaint),
+                _ => _message
+            };
             BroadCast();
         }
     }

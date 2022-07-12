@@ -4,20 +4,20 @@ namespace StrategyPattern.Models
 {
     public class Context : IContext
     {
-        private ISearchStrategy? searchStrategy;
+        private ISearchStrategy? _searchStrategy;
 
         public void SetStrategy(ISearchStrategy strategy)
         {
-            searchStrategy = strategy;
+            _searchStrategy = strategy;
         }
 
         public Node ExecuteStrategy(int id, Node root)
         {
-            if (searchStrategy == null) 
+            if (_searchStrategy == null) 
             {
                 throw new InvalidOperationException("There is no strategy for the context");
             }
-            return searchStrategy.Search(id, root);
+            return _searchStrategy.Search(id, root);
         }
     }
 }

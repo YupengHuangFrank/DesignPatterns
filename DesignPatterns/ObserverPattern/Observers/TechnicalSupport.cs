@@ -2,15 +2,15 @@
 
 namespace ObserverPattern.Observers
 {
-    public class TechinicalSupport : IObserver
+    public class TechnicalSupport : IObserver
     {
-        private ISubject _subject;
         private const string StandardResponse = "This is technical support, I'm here to help.";
+        public readonly List<string> Complaints;
 
-        public TechinicalSupport(ISubject subject) 
+        public TechnicalSupport(ISubject subject) 
         {
-            _subject = subject;
             subject.RegisterObserver(this);
+            Complaints = new List<string>();
         }
         public void Act(string message)
         {
@@ -18,6 +18,7 @@ namespace ObserverPattern.Observers
             {
                 Console.WriteLine(StandardResponse);
             }
+            Complaints.Add(message);
         }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace StrategyPattern.Strategies
 {
-    public class BFS : ISearchStrategy
+    public class Bfs : ISearchStrategy
     {
         public Node Search(int id, Node root)
         {

@@ -2,7 +2,7 @@
 {
     public enum StrategyEnum
     {
-        BFS = 0,
-        DFS = 1
+        Bfs = 0,
+        Dfs = 1
     }
 }

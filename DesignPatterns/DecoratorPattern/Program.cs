@@ -1,5 +1,5 @@
-﻿using DecoraterPattern.Models.Decorators;
-using DecoraterPattern.Models.Base;
+﻿using DecoratorPattern.Models.Base;
+using DecoratorPattern.Models.Decorators;
 
 var testString = "TEST STRING";
 var baseTransform = new BaseTransform();

@@ -1,4 +1,4 @@
-﻿namespace DecoraterPattern.Models.Base
+﻿namespace DecoratorPattern.Models.Base
 {
     public interface ITransformationPipeline
     {

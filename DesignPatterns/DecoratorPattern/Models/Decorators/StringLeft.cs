@@ -1,11 +1,11 @@
-﻿using DecoraterPattern.Models.Base;
+﻿using DecoratorPattern.Models.Base;
 
-namespace DecoraterPattern.Models.Decorators
+namespace DecoratorPattern.Models.Decorators
 {
     public class StringLeft : ITransformationPipeline
     {
-        private ITransformationPipeline _pipeline;
-        private int _argument;
+        private readonly ITransformationPipeline _pipeline;
+        private readonly int _argument;
 
         public StringLeft(ITransformationPipeline pipeline, int argument) 
         {

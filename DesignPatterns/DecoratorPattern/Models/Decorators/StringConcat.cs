@@ -1,11 +1,11 @@
-﻿using DecoraterPattern.Models.Base;
+﻿using DecoratorPattern.Models.Base;
 
-namespace DecoraterPattern.Models.Decorators
+namespace DecoratorPattern.Models.Decorators
 {
     public class StringConcat : ITransformationPipeline
     {
-        private ITransformationPipeline _pipeline;
-        private string _argument;
+        private readonly ITransformationPipeline _pipeline;
+        private readonly string _argument;
 
         public StringConcat(ITransformationPipeline pipeline, string argument) 
         {
