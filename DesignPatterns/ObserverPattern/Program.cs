@@ -33,7 +33,7 @@ foreach (var message in manager.Complaints)
     Console.WriteLine(message);
 }
 
-foreach (var message in technicalSupport.Complaints)
+foreach (var message  in technicalSupport.Complaints)
 {
     Console.WriteLine(message);
 }
