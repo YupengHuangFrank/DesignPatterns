@@ -3,5 +3,6 @@
     public interface IObserver
     {
         void Act(string message);
+        void Unsubscribe();
     }
 }

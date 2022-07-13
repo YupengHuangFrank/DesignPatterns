@@ -6,10 +6,12 @@ namespace ObserverPattern.Observers
     {
         private const string StandardResponse = "This is technical support, I'm here to help.";
         public readonly List<string> Complaints;
+        private ISubject? _subject;
 
-        public TechnicalSupport(ISubject subject) 
+        public TechnicalSupport(ISubject subject)
         {
-            subject.RegisterObserver(this);
+            _subject = subject;
+            _subject.RegisterObserver(this);
             Complaints = new List<string>();
         }
         public void Act(string message)
@@ -19,6 +21,12 @@ namespace ObserverPattern.Observers
                 Console.WriteLine(StandardResponse);
             }
             Complaints.Add(message);
+        }
+
+        public void Unsubscribe()
+        {
+            _subject?.RemoveObserver(this);
+            _subject = null;
         }
     }
 }
