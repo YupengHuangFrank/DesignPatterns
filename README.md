@@ -8,3 +8,4 @@
 - [Decorator Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/DecoratorPattern)
 - [Factory Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/FactoryPattern)
 - [Singleton Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/SingletonPattern)
+- [Command Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/CommandPattern)
