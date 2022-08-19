@@ -9,3 +9,4 @@
 - [Factory Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/FactoryPattern)
 - [Singleton Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/SingletonPattern)
 - [Command Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/CommandPattern)
+- [Adapter Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/AdapterPattern)
