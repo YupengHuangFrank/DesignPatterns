@@ -12,3 +12,4 @@
 - [Adapter Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/AdapterPattern)
 - [Template Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/TemplatePattern)
 - [Iterator Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/IteratorPattern)
+- [State Pattern](https://github.com/YupengHuangFrank/DesignPatterns/tree/main/DesignPatterns/StatePattern)
